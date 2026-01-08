@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Cafemart Pro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<style>
+body{margin:0;background:#000;display:flex;align-items:center;justify-content:center;height:100vh;}
+</style>
+</head>
+<body>
+<img src="icon-512.png" width="220">
+<script>
+setTimeout(()=>{ window.location.href='app.html'; },2000);
+if('serviceWorker' in navigator){
+ navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</body>
+</html>
